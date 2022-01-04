@@ -1,14 +1,14 @@
 function toArray(obj){
-    let array=[];
-for (const property in object) {
-    console.log(`${property}: ${object[property]}`);
-    let string = "[\"" + property +"\"," +  object[property] + "]";
-     array.push(string);
+    let finalArray=[];
+for (const property in obj) {
+    let initialArray=[];
+    console.log(property +":"+ obj[property]);
+    initialArray.push(property);
+    initialArray.push(obj[property]);
+     finalArray.push(initialArray);
     }
-return array;
+return finalArray;
 }  
-// const object = {a: 1 , b:2 };
-// let array = toArray(object);
-const object={shrimp: 15, tots: 12 };
+const object = { shrimp: 10, tots: 15};
 let array = toArray(object);
 console.log(array);
