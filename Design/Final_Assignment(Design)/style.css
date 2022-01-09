@@ -48,7 +48,7 @@ body {
   padding: 20px 16px 0px;
 }
 .brand {
-  width: 44.4976%;
+  width: 44.49760%;
   height: 58px;
   margin-right: 35px;
   text-align: left;
@@ -73,7 +73,7 @@ body {
   width: 27.990430622%;
   position: relative;
   left: -40px;
-  padding: 18px 38px;
+  /* padding: 18px 38px ; */
 }
 .drawer {
   position: relative;
@@ -84,10 +84,10 @@ body {
   text-align: center;
   margin-top: 108px;
   color: #ffffff;
-  width: 71.291866%;
+  width: 71.2918660%;
   margin: 108px auto 0px;
 }
-.content-title {
+.content-title{
   font-weight: bold;
   font-size: 22px;
   line-height: 33px;
@@ -115,14 +115,14 @@ body {
   padding: 16px 0px;
 }
 .screen-mask {
-  margin: auto 80px;
+  margin:auto 80px;
   text-align: center;
 }
 .screen-mask img {
   width: 90.6578947368%;
 }
 .features {
-  background-color: #252b42;
+ background-color: #252b42;
   color: #ffffff;
   /* height: 1092.12px; */
   padding: 80px 0px 80px 0px;
@@ -131,11 +131,11 @@ body {
 /* .feature-content {
   padding: 81px 50px 0px;
 } */
-.feature-icons {
+.feature-icons{
   padding-left: 81.5px;
   padding-right: 81.5px;
 }
-.feature-img img {
+.feature-img img{
   width: 92.2990430622%;
   margin: 0px auto;
 }
@@ -156,7 +156,7 @@ body {
   top: -16px;
   margin-left: 10px;
 }
-.icon-title {
+.icon-title{
   margin-bottom: 10px;
 }
 .icon-title img {
@@ -219,11 +219,11 @@ body {
 .sub-content h2 {
   font-weight: normal;
 }
-.newsletter {
+.newsletter{
   background-color: #252b42;
   margin: auto;
   padding-top: 81px;
-
+  
   /* height: 1074.49px; */
 }
 .newsletter-content {
@@ -270,7 +270,7 @@ body {
 .Email-id {
   margin-top: 34px;
 }
-.testimonial {
+.testimonial{
   background-color: #252b42;
 
   margin: 0px auto;
@@ -285,12 +285,14 @@ body {
   /* margin: 0px auto; */
   margin-bottom: 96px;
   color: #ffffff;
-  padding-left: 75px;
+  padding-left:75px;
+
+  
 }
 .testimonial-card {
   width: 71.03110048%;
   margin: 0px auto;
-  padding: 34px, 42px, 34px, 42px;
+  Padding: 34px, 42px, 34px, 42px;
 }
 .card {
   width: 100%;
@@ -317,7 +319,7 @@ body {
   letter-spacing: 0.16907px;
   margin: 0px auto 35px;
   padding: 8px;
-  width: 50.7177033493%;
+  width:50.7177033493%;
 }
 .stars {
   width: 41.4141414141%;
@@ -473,10 +475,13 @@ body {
 .socialmedia img:last-child {
   margin-right: 0px;
 }
-.map {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 85.64593301%;
+.map{
+padding-left: 30px;
+padding-right: 30px;
+width: 90%;
+}
+#map1{
+  display: none;
 }
 .contact-detail div {
   width: 63.1578947368%;
@@ -561,6 +566,7 @@ form textarea {
   margin-right: 185px;
 }
 
+
 .footer-section {
   background-color: #252b42;
   padding: 73px 0px;
@@ -574,6 +580,7 @@ form textarea {
   letter-spacing: 0.1px;
   color: #ffffff;
   margin-bottom: 25px;
+
 }
 .names {
   font-weight: bold;
@@ -582,24 +589,27 @@ form textarea {
   letter-spacing: 0.1px;
   color: #ffffff;
   margin-bottom: 25px;
+ 
 }
 .section li {
   margin-bottom: 16px;
+ 
 }
 .section li:last-child {
   margin-bottom: 0px;
 }
 .section {
   margin-bottom: 83px;
+  
 }
-#footer-section2 {
+#footer-section2{
   display: none;
 }
-#footer-section3 {
+#footer-section3{
   display: none;
 }
-#footer-section4 {
-  display: none;
+#footer-section4{
+  display:none;
 }
 #footer-socialmedia {
   margin-bottom: 33px;
@@ -609,7 +619,7 @@ form textarea {
   font-size: 22px;
   line-height: 33px;
   letter-spacing: 0.1px;
-  margin-bottom: 5px;
+  margin-bottom:5px;
   color: #ffffff;
 }
 .second-section-detail {
@@ -627,4 +637,236 @@ footer {
   padding: 73px 0px;
   width: 100%;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 790px) {
+  body {
+    min-width: 790px;
+    margin: 0px auto;
+    text-align: center;
+    overflow-x: auto;
+    color: #252b42;
+    font-family: "Roboto", sans-serif;
+  }
+  .header{
+    background-image: url(./images/gradient.svg);
+  width: 100%;
+  height: 922px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80px;
+  background-size: 100% 800px;
+  background-color: #252b42;
+  }
+  .header-gradient div {
+    display: inline-block;
+  }
+  .header-gradient {
+    padding: 20px 16px 0px;
+  }
+  .brand {
+    /* width: 44.49760%;
+    height: 58px;
+    margin-right: 35px;
+    text-align: left; */
+    width: 12.9166666667%;
+    position: absolute;
+    top: 52px;
+    left: 10%;
+  }
+  .sub-btn {
+    width: 56.4593301435%;
+  }
+  .btn {
+    align-items: center;
+    padding: 18px 38px;
+    background: #ffffff;
+    /* width: 27.990430622%; */
+    border-radius: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #2091f9;
+    border: none;
+  }
+  #login {
+    width: 27.990430622%;
+    position: relative;
+    left: -40px;
+    /* padding: 18px 38px ; */
+    display: none;
+  }
+  #drawer {
+    position: relative;
+    top: 25%;
+    margin-left: 27px;
+    display:none;
+  }
+  .header-content {
+    text-align: center;
+    margin-top: 108px;
+    color: #ffffff;
+    width: 71.2918660%;
+    margin: 108px auto 0px;
+  }
+  .content-title{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    margin-bottom: 17px;
+  }
+  .content-initials {
+    font-size: 46px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 27px;
+  }
+  .content-details {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 59px;
+  }
+  .content-button {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    width: 56.4593301435%;
+    padding: 16px 0px;
+  }
+  .screen-mask {
+    margin:auto 80px;
+    text-align: center;
+  }
+  .screen-mask img {
+    width: 90.6578947368%;
+  }
+  #login {
+    display: none;
+  }
+  #mail {
+    display: inline-block;
+    width: 62%;
+    top: 52px;
+    right: -2%;
+    position: absolute;
+  }
+  #mailaddress {
+    width: 30%;
+    background: #efefef;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    border-radius: 39px;
+    height: 45px;
+  }
+  .sub-btn {
+    width: 20%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2091f9;
+    padding: 10px;
+    height: 45px;
+  }
+  #mail input,
+  #mail button {
+    display: inline-block;
+  }
+  .testimonial {
+    margin-top: 160px;
+    overflow-x: hidden;
+  }
+  .testimonial-heading{
+   text-align: center;
+   padding-left: 150px;
+    
+  }
+  .card {
+    width: 30%;
+    height: 500px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .testimonial-card {
+    width: 90.052632%;
+  }
+  .card:nth-child(4) {
+    margin-left: 0px;
+  }
+  .pricing-primary {
+    width: 48.223744%;
+    text-align: left;
+    float: left;
+  }
+  .price-content {
+    overflow: hidden;
+    clear: both;
+    width: 79.833333%;
+    margin: 0px auto;
+  }
+  .price-info {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+  .price-detail {
+    width: 36.511416%;
+    padding: 0px;
+    float: right;
+    margin: 0px;
+  }
+  .price-btn {
+    width: 65.9751037344%;
+  }
+  .price-btn button {
+    padding: 0px;
+  }
+
+  .contact-detail div {
+    width: 30.1578947368%;
+    /* margin: 88px auto 22px; */
+  }
+  .contact-detail div p {
+    width:100%;
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    position: relative;
+    bottom: 5px;
+    margin-left: 3px;
+    color: #ffffff;
+  }
+  .contact-detail {
+    margin-bottom: 78px;
+  }
+  .contact-detail div img,
+  .contact-detail div p {
+    display: block;
+  }
+  .contact-detail div img {
+    margin: 30px auto 10px;
+    padding-right:200px;
+  }
+  #submit {
+    width: 38.3597883598%;
+    height: 52px;
+    background: #2091f9;
+    border-radius: 35px;
+    font-weight: 500;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    padding:18px, 38px, 18px, 38px;
+    margin-right: 264px;
+  }
+  
 }
