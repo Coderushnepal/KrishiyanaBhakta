@@ -6,15 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FigmaLand</title>
- <link rel="stylesheet" type="text/css" href="style.css"/>  
+  <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
-  <header class="header">
-    <div class="header-container">
-      <div class="header-gradient">
-        <div class="brand">
-          <img src="images/Rectangle 4.png" alt="Logo" />
+  <div class="header-container">
+    <div class="header-bar">
+      <div class="header-top">
+        <div class="label">
+          <img src="images/Rectangle 4.png" alt="label" />
         </div>
         <nav class="navbar">
           <ul>
@@ -25,197 +24,208 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <div id="mail">
-          <input type="text" name="mail" id="mailaddress" placeholder="Your Email" />
-          <button class="btn sub-btn">Subscribe</button>
+        <div class="desktop-mail">
+          <button class="email">Your Email</button>
+          <button class="submit">Subscribe </button>
         </div>
-        <div class="header-right side">
-
-          <div class="login" id="login">
+        <div class="mobile-button">
+          <div class="login" >
             <button class="btn">Login</button>
           </div>
-          <div class="drawer" id="drawer">
+          <div class="drawer">
             <img src="images/hamburger.png" alt="drawer" />
           </div>
         </div>
+      </div>
+      <div class="header-content">
+        <h1 class="headline">
+          At your fingertips
+        </h1>
+        <h2 class=content-section>
+          Lightning fast
+          prototyping
+        </h2>
+        <p class="description">
+          Most calendars are designed for teams.
+          Slate is designed 
+          <br>for freelancers
+        </p>
+        <button class="content-button btn">
+          Try for Free
+        </button>
+      </div>
+      <div class="screen-mask">
+        <img src="./images/laptop.png" alt="laptop">
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="text-content ">
+      <h1 class="headline">
+        At your fingertips
+      </h1>
+      <h2 class = "content-section">
+        Features
+      </h2>
+      <p class="description">
+        Most calendars are designed for teams.<br>
+        Slate is designed for freelancers
+      </p>
+    </div>
+    <div class="feature-content clearfix ">
+      <div class="image-content">
+        <img src="./images/feature.png" alt="Screen-mask">
+      </div>
+      <div class="items">
+        <div class="item-individual">
+          <div class="item-headline">
+            <img src="./images/ic_round-restaurant-menu.png" alt="icon">
+            <h1 class="headline">
+              At your fingertips
+            </h1>
+          </div>
+          <p class="item-detail">
+            Slate helps you see how many
+            more days you need to work to
+            reach your financial goal.
+          </p>
         </div>
-        </div>
-        <div class="header-content">
-          <h3 class="content-title">
-            At your fingertips
-            </h3>
-            <h2 class="content-initials">
-              Lightning fast
-              prototyping
-            </h2>
-            <h4 class="content-details">
-              Most calendars are designed for teams.<br>
-              Slate is designed for freelancers
-            </h4>
-            <button class="content-button btn">
-              Try for Free
-            </button>
-  
-        </div>
-  
-        <div class="screen-mask">
-          <img src="./images/laptop.png" alt="laptop">
+        <div class="item-individual">
+          <div class="item-headline">
+            <img src="./images/ic_round-restaurant-menu.png" alt="icon">
+            <h1 class="headline">
+              At your fingertips
+            </h1>
+          </div>
+          <p class="item-detail">
+            Slate helps you see how many
+            more days you need to work to
+            reach your financial goal.
+          </p>
         </div>
       </div>
-        </header>
-        <div class="features">
-          <div class="feature-content">
-            <h3 class="content-title">
-              At your fingertips
-            </h3>
-            <h2 class="content-initials">
-              Features
-            </h2>
-            <h4 class="content-details">
-              Most calendars are designed for teams.<br>
-              Slate is designed for freelancers
-            </br>
-            </h4>
-          </div>
-          <div class="feature-img">
-            <img src="./images/feature.png" alt="Screen">
-          </div>
-          <div class="feature-icons">
-            <div class="icon">
-              <div class="icon-title">
-                <img src="./images/ic_round-restaurant-menu.png" alt="icon">
-                <h3 class="title">
-                  At your fingertips
-                </h3>
-              </div>
-              <p class="icon-details">
-                Slate helps you see how many 
-                more days you need to work to
-                reach your financial goal.
-              </p>
-            </div>
-            <div class="icon">
-      
-              <div class="icon-title">
-                <img src="./images/ic_round-restaurant-menu.png" alt="icon">
-                <h3 class="title">
-                  At your fingertips
-                </h3>
-              </div>
-              <p class="icon-details">
-                Slate helps you see how many
-                more days you need to work to
-                reach your financial goal.
-              </p>
-            </div>
-      
-            </div>
-          </div>
-        </div>
-        <div class="about">
-          <div class="content">
-            <h3 class="content-primary">
-              At your fingertips
-              </h2>
-              <h2 class="content-secondary">
-                Lightning fast
-                prototyping
-              </h2>
-              <p class="content-detail">
-                Most calendars are designed for teams.
-                Slate is designed for freelancers
-              </p>
-              <div class="buttons">
-                <button class="btn-buy">
-                  Buy now
-                </button>
-                <button class="btn-buy">
-                  Try for free
-                </button>
-              </div>
-          </div>
-        </div>
-        <div class="newsletter">
-          <div class="newsletter-content">
-            <h3 class="content-title">
-              At your fingertips
-              </h2>
-              <h2 class="content-initials">
-                Newsletter
-              </h2>
-              <p class="content-details">
-                Most calendars are designed for teams.<br>
-                Slate is designed for freelancers
-              </p>
-          </div>
-        <div class="newspaper">
-          <img src="./images/newspaper.png" alt="Newsletter">
-        </div>
-        <div class="subscribe">
-          <h3 >
-            Subscribe to our Newsletter
-          </h3>
-          <p>
-            Available exclusivery on Figmaland
-          </p>
-          <div class="Email-id">
-            <input class="mail-input" type="text" name="email" id="email" placeholder="Your Email">
-            <button class="mail-btn">Subscribe</button>
-          </div>
-        </div>
-        <!-- </div> -->
-        
-        <div class="testimonial">
-          <h2 class="testimonial-heading">
-            Testimonials
-          </h2>
-          <div class="testimonial-card">
-            <div class="card" id="card1">
-              <div class="profile-pic">
-                <img src="./images/Ellipse 2.png" alt="Profilepic">
-              </div>
-              <p class="quote">
-                Slate helps you see how many
-                more days you need to work
-                to reach your financial goal for
-                the month and year.
-              </p>
-              <div><img src="./images/stars.png" alt="stars" class="stars"></div>
-              <p class="author-name">Regina Miles</p>
-              <p class="post">Designer</p>
-            </div>
-            <div class="card" id="card2">
-              <div class="profile-pic">
-                <img src="./images/Ellipse 3.png" alt="Profilepic">
-              </div>
-              <p class="quote">
-                Slate helps you see how many
-                more days you need to work
-                to reach your financial goal for
-                the month and year.
-              </p>
-              <div><img src="./images/stars.png" alt="stars" class="stars"></div>
-              <p class="author-name">Regina Miles</p>
-              <p class="post">Designer</p>
-            </div>
-            <div class="card" id="card3">
-              <div class="profile-pic">
-                <img src="./images/Ellipse 4.png" alt="Profilepic">
-              </div>
-              <p class="quote">
-                Slate helps you see how many
-                more days you need to work
-                to reach your financial goal for
-                the month and year.
-              </p>
-              <div><img src="./images/stars.png" alt="stars" class="stars"></div>
-              <p class="author-name">Regina Miles</p>
-              <p class="post">Designer</p>
-            </div>
-            <div class="testimonial-btn">
-              <button class="testimonial-button">More Testimonials</button>
-            </div>
-        </div>
+    </div>
+  </div>
+  
+<div class="body-wrapper">
+  <div class="desktop-lighting">
+    <div class="lightning-text">
+      <h3 class="headline">At your finger tips </h2>
+        <h2 class="body-section">Lighting fast protoyping</h2>
+      <h4 class= "description">Most calendars are designed for teams. Slate is designed for freelancers</h4> 
+     </div>
+       <button class="buy-now">Buy Now</button>
+        <button class="try-for-free">Try For Free</button>
+  </div>
+</div>
+  
+   
+<div class="mobile-newsletter">
+    <h3 class="headline"> At your fingertips</h3>
+    <h2 class="section">Newsletter </h2>
+    <p class="description">
+      Most calendars are designed for teams.<br>
+      Slate is designed for freelancers
+    </p>
+    <div class="mobile-newsletter">
+      <div class="newspaper">
+        <img src="./images/newspaper.png" alt="Newsletter">
+      </div>
+      <div class="mob-news">
+        <h3 class="description">Subscribe to our Newsletter</h3>
+        <p class="mobile-subscribe">Available exclusivery on Figmaland</p>
+    </div>
+    <div class="mobile-newsletter-button">
+      <input class="mail-input" type="text" name="email" placeholder="Your Email"><br>
+      <button class="mail-btn">Subscribe</button>
+    </div>
+
+      </div>
+</div>
+
+<div class="desktop-newsletter"> 
+  <div class="newspaper">
+    <img src="./images/newspaper.png" alt="Newsletter">
+  </div>
+  <div class="newsletter-details">
+    <h3 class="headline"> At your fingertips</h3>
+  <h2 class="section">Newsletter </h2>
+  <p class="description">
+    Most calendars are designed for teams.<br>
+    Slate is designed for freelancers
+  </p>
+  </div>
+  <div class="desktop-newsletter-desc">
+    <!-- <div class="newspaper">
+      <img src="./images/newspaper.png" alt="Newsletter">
+    </div> -->
+      <h3 class="description">Subscribe to our Newsletter</h3>
+      <p class="subscribe">Available exclusivery on Figmaland</p>
+  </div>
+  <div class="desktop-newsletter-button">
+    <input class="mail-input" type="text" name="email" placeholder="Your Email"><br>
+    <button class="mail-btn">Subscribe</button>
+  </div>
+</div>
+
+
+<div class="testimonial">
+  <h2 class="testimonial-heading">
+    Testimonials
+  </h2>
+  <div class="testimonial-card">
+
+    <div class="card user1">
+      <div class="user-pic">
+        <img src="./images/Ellipse 2.png" alt="Userpic">
+      </div>
+      <p class="quote">
+        Slate helps you see how many
+        more days you need to work
+        to reach your financial goal for
+        the month and year.
+      </p>
+      <div><img src="./images/stars.png" alt="stars" class="stars"></div>
+      <p class="user-name">Regina Miles</p>
+      <p class="post">Designer</p>
+    </div>
+
+    <div class="card user2">
+      <div class="user-pic">
+        <img src="./images/Ellipse 3.png" alt="Userpic">
+      </div>
+      <p class="quote">
+        Slate helps you see how many
+        more days you need to work
+        to reach your financial goal for
+        the month and year.
+      </p>
+      <div><img src="./images/stars.png" alt="stars" class="stars"></div>
+      <p class="user-name">Regina Miles</p>
+      <p class="post">Designer</p>
+    </div>
+
+  
+    <div class="card User3">
+      <div class="user-pic">
+        <img src="./images/Ellipse 4.png" alt="Userpic">
+      </div>
+      <p class="quote">
+        Slate helps you see how many
+        more days you need to work
+        to reach your financial goal for
+        the month and year.
+      </p>
+      <div><img src="./images/stars.png" alt="stars" class="stars"></div>
+      <p class="user-name">Regina Miles</p>
+      <p class="post">Designer</p>
+    </div>
+  </div>
+  <div class="testimonial-btn">
+    <button class="testimonial-button">More Testimonials</button>
+  </div>
+</div>
+
   <div class="pricing">
     <div class="price-content">
 
@@ -235,8 +245,8 @@
           30 - DAY FREE TRIAL.
         </h4>
         <div class="price">
-          <h1 id="price-value">$10</h1>
-          <h4 id="price-time">/ Month per User</h4>
+          <h1 class="price-value">$10 </h1>
+          <h4 class="price-time">/ Month per User</h4>
         </div>
         <h4 class="price-calender">Most calendars are designed
           for teams.
@@ -247,104 +257,101 @@
       </div>
     </div>
   </div>
-  <div class="contact">
-    <h2 class="contact-heading">
-      Contact Us
-    </h2>
-    <h4 class="contact-info">
-      Most calendars are designed for teams.<br>
-      Slate is designed for freelancers
-    </h4>
+  <div class=contact-us>
+    <h2 class="contact-h2">Contact Us</h2>
+    <h4 class="contact-h4">Most calendars are designed for teams.<br>
+       Slate is designed for freelancers</h4>
     <div class="socialmedia">
-      <img src="./images/twitter.png" alt="twitter">
-      <img src="./images/facebook.png" alt="facebook">
-      <img src="./images/linkedin.png" alt="linkedin">
+        <img src="./images/twitter.png" alt="twitter">
+        <img src="./images/facebook.png" alt="facebook">
+        <img src="./images/linkedin.png" alt="linkedin">
+      </div>
+    <div class="mobile-map">
+        <img src="./images/map_screen.png" alt="map">
     </div>
-    <div class="map" id="map">
-      <img src="./images/map_screen.png" alt="map">
-    </div>
-    <div class="map1" id="map1">
-      <img src="./images/map_screen1.svg" alt="map1">
-    </div>
+    <div class="map">
+        <img src="./images/map_screen1.svg" alt="map1">
+    </div>  
     <div class="contact-detail">
-      <div>
-        <img src="./images/location.png" alt="location" class="location">
-        <p>6386 Spring St undefined Anchorage,<br>
-          Georgia 12473 United States</p>
-      </div>
-      <div>
-        <img src="./images/mobile.png" alt="phone" class="phone">
-        <p>(843) 555-0130</p>
-      </div>
-      <div>
-        <img src="./images/mail.png" alt="mail" class="e-mail">
-        <p>willie.jennings@example.com </p>
-      </div>
-    </div>
-    <div class="contact-form">
-      <p class="form-heading">Contact Us</p>
-      <form action="action">
-        <input type="text" name="name" id="name" placeholder="Your Name">
-        <input type="email" name="email" id="elec-mail" placeholder="Your Email">
-        <textarea name="message" id="msg" placeholder="Your Message" cols="30" rows="10"></textarea>
-        <input type="submit" name="submit" id="submit" value="Send">
-      </form>
-    </div>
-    </div>
-    <footer>
-      <div class="footer-section">
-        <div class="footer-initial">
-          <div class="section" id="footer-section-names">
-            <div class="names">
-              Annette Steward
+        <div>
+          <img src="./images/location.png" alt="location" class="location">
+          <p>6386 Spring St undefined Anchorage,
+            Georgia 12473 United States</p>
+        </div>
+        <div>
+          <img src="./images/mobile.png" alt="phone" class="phone">
+          <p>(843) 555-0130</p>
+        </div>
+        <div>
+          <img src="./images/mail.png" alt="mail" class="e-mail">
+          <p>willie.jennings@example.com </p>
+        </div>
+        <div class="contact-form">
+          <p class="form-heading">Contact Us</p>
+          <form class="mobile-form">
+            <input type="text" name="name" id="name" placeholder="Your Name">
+            <input type="email" name="email" id="e-mail" placeholder="Your Email">
+            <textarea name="message" id="msg" placeholder="Your Message" cols="30" rows="10"></textarea>
+
+            <button class="contact-btn">Send</button>
+            
+          </form>
+        </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-mobile">
+        <div class="mobile-content footer-mobile-content1">
+          <div class="footer-headline">
+            Annette Steward
+          </div>
+          <ul>
+            <li><a href="#">Jennie Cooper</a></li>
+            <li><a href="#">Julie Henry</a></li>
+            <li><a href="#">johnny Murphy</a></li>
+            <li><a href="#">Gregory Mccoy</a></li>
+            <li><a href="#">Marvin Mckinney</a></li>
+          </ul>
+        </div>
+        <div class="mobile-content footer-mobile-content1">
+          <div class="footer-headline">
+            Annette Steward
+          </div>
+          <ul>
+            <li><a href="#">Jennie Cooper</a></li>
+            <li><a href="#">Julie Henry</a></li>
+            <li><a href="#">johnny Murphy</a></li>
+            <li><a href="#">Gregory Mccoy</a></li>
+            <li><a href="#">Marvin Mckinney</a></li>
+          </ul>
+        </div>
+        <div class="mobile-content footer-mobile-content1">
+          <div class="footer-headline">
+            Annette Steward
+          </div>
+          <ul>
+            <li><a href="#">Jennie Cooper</a></li>
+            <li><a href="#">Julie Henry</a></li>
+            <li><a href="#">johnny Murphy</a></li>
+            <li><a href="#">Gregory Mccoy</a></li>
+            <li><a href="#">Marvin Mckinney</a></li>
+          </ul>
+        </div>
+     
+        <div class="desktop-footer">
+          <div class="content-each footer-content1">
+            <div class="page-content_header">
+              Pages
             </div>
             <ul>
-              <li><a href="#">Jennie Cooper</a></li>
-              <li><a href="#">Johnny Murphy</a></li>
-              <li><a href="#">Gregory Mccoy</a></li>
-              <li><a href="#">Marvin Mckinney</a></li>
-              
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="section" id="footer-section-names">
-            <div class="names">
-              Annette Steward
-            </div>
-            <ul>
-              <li><a href="#">Jennie Cooper</a></li>
-              <li><a href="#">Johnny Murphy</a></li>
-              <li><a href="#">Gregory Mccoy</a></li>
-              <li><a href="#">Marvin Mckinney</a></li>
-              
-            </ul>
-          </div>
-          <div class="section" id="footer-section-names">
-            <div class="names">
-              Annette Steward
-            </div>
-            <ul>
-              <li><a href="#">Jennie Cooper</a></li>
-              <li><a href="#">Johnny Murphy</a></li>
-              <li><a href="#">Gregory Mccoy</a></li>
-              <li><a href="#">Marvin Mckinney</a></li>
-              
-            </ul>
-          </div>
-            <div class="section" id="footer-section2">
-              <div class="page-header">
-                Pages
-              </div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-           
-          </div>
-          <div class="section" id="footer-section3">
+          <div class="content-each footer-content2">
             <div class="page-content_header">
               Tomothy
             </div>
@@ -356,7 +363,7 @@
               <li><a href="#">Gloria Richards</a></li>
             </ul>
           </div>
-          <div class="section" id="footer-section4">
+          <div class="content-each footer-content3">
             <div class="page-content_header">
               Jane Black
             </div>
@@ -369,29 +376,24 @@
             </ul>
           </div>
         </div>
-        <div class="footer-second-section">
-          <div class="socialmedia" id="footer-socialmedia">
-            <img src="./images/twitter_1.png" alt="twitter">
-            <img src="./images/facebook_1.png" alt="facebook">
-            <img src="./images//linkedin_1.png" alt="linkedin">
-          </div>
-          <div class="second-section-header">
-            Subscribe to our Newsletter
-          </div>
-          <div class="second-section-detail">
-            Available exclusivery on Figmaland
-          </div>
-          <div class="mailing-address" id="footer-mail">
-            <input class="mail-input" type="text" name="email" id="email" placeholder="Your Email">
-            <button class="mail-btn">Subscribe</button>
-          </div>
+      <div class="footer-desktop">
+        <div class="socialmedia footer-socialmedia">
+          <img src="./images/twitter_1.png" alt="twitter">
+          <img src="./images/facebook_1.png" alt="facebook">
+          <img src="./images/linkedin_1.png" alt="linkedin">
+        </div>
+        <div class="desktop-content_header">
+          Subscribe to our Newsletter
+        </div>
+        <div class="desktop-content-detail">
+          Available exclusivery on Figmaland
+        </div>
+        <div class="footer-button">
+          <button class="email">Your Email</button>
+          <button class="mail-btn">Subscribe</button>
         </div>
       </div>
-    </footer>
-  
-        </body>
-        </html>
-    
-        
-    
-        
+    </div>
+  </footer>
+</body>
+</html>
