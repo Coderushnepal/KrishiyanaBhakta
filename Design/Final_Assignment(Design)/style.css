@@ -6,11 +6,8 @@
 ul {
   list-style-type: none;
 }
-.computer {
+.laptop{
   z-index: 5;
-}
-.spacing {
-  z-index: 1;
 }
 li a {
   text-decoration: none;
