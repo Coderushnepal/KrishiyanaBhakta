@@ -4,12 +4,12 @@ function  arrayOfObj(names){
     let outputArray = [];
     for (let i =0;i<names.length;i++){
     let fullname = names[i].split(" ");
-    let firstName = fullname[0];
-    let lastName = fullname[1];
+    // let firstName = fullname[0];
+    // let lastName = fullname[1];
     let obj = new Object();
     obj.id = i+1;
-    obj.firstName = firstName;
-    obj.lastName = lastName;
+    obj.firstName =  fullname[0];
+    obj.lastName =  fullname[1];
     outputArray.push(obj);
     
     }
@@ -47,5 +47,6 @@ let output1 = arrayOfObj(nameArray);
 console.log(output1);
 //2
 find("s");
+find("a");
 //3
 convertOutput1(output1);
