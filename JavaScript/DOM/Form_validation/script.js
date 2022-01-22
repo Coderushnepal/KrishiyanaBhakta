@@ -16,15 +16,12 @@ heading.style.fontStyle ="normal";
 heading.style.background = "linear-gradient(to left, #673ab7, #03a9f4)";
 heading.style.color = "#ffffff";
 form.appendChild(heading);
-var break_line = document.createElement('br');
-form.appendChild(break_line);
+var breakLine= document.createElement('br');
+form.appendChild(breakLine);
 
 var labelname = document.createElement("label");
 labelname.innerHTML = "Username";
 form.appendChild(labelname);
-
-var break_line = document.createElement('br');
-form.appendChild(break_line);
 
 var username = document.createElement("input");
 username.setAttribute("id" , "username");
@@ -45,8 +42,8 @@ error.innerHTML = "User name must be of at least 4 characters.";
 error.style.fontSize = "14px";
 form.appendChild(error);
   
-var break_line = document.createElement('br');
-form.appendChild(break_line);
+var breakLine= document.createElement('br');
+form.appendChild(breakLine);
 
 var labelname = document.createElement("label");
 labelname.innerHTML = "Email";
@@ -71,9 +68,8 @@ errorEmail.innerHTML = "Enter verified email address";
 errorEmail.style.fontSize = "14px";
 form.appendChild(errorEmail); 
 
-
-var break_line = document.createElement('br');
-form.appendChild(break_line);
+var breakLine= document.createElement('br');
+form.appendChild(breakLine);
 
 var labelname = document.createElement("label");
 labelname.innerHTML = "Password";
@@ -97,8 +93,8 @@ errorMessage.innerHTML = "Password must contain 6 characters.";
 errorMessage.style.fontSize = "14px";
 form.appendChild(errorMessage); 
 
-var break_line = document.createElement('br');
-form.appendChild(break_line);
+var breakLine= document.createElement('br');
+form.appendChild(breakLine);
 
 var labelname = document.createElement("label");
 labelname.innerHTML = "Confirm Password";
