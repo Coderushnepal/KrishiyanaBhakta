@@ -9,7 +9,7 @@ form.style.boxShadow ="0 2px 5px rgba(0, 0, 0, 0.3)" ;
 document.body.appendChild(form);
 
 var heading = document.createElement("h1");
-heading.innerHTML = "Create Account";
+heading.innerHTML = "Register With Us";
 heading.style.fontSize = "22px";
 heading.style.padding = "20px";
 heading.style.fontStyle ="normal";
@@ -118,38 +118,13 @@ errorMessage2.innerHTML = "Password doesnt match.";
 errorMessage2.style.fontSize = "14px";
 form.appendChild(errorMessage2); 
 
-var showPassword = document.createElement("input");
-showPassword.setAttribute("type", "checkbox");
-form.appendChild(showPassword);
-showPassword.style.marginBottom = "20px";
-showPassword.style.marginLeft= "195px";
-showPassword.addEventListener('change', function(event) {
-    if (this.checked) {
-        password.setAttribute("type", "text");
-    }
-    else {
-        password.setAttribute("type", "password");
-    }
-    if (this.checked) {
-        confirmPassword.setAttribute("type" , "text");
-    }
-    else{
-        confirmPassword.setAttribute("type" , "password");
-    }
-})
-
-var showLabel = document.createElement("label");
-showLabel.innerHTML = "Show password";
-showLabel.style.fontSize = "14px";
-form.appendChild(showLabel);
-
 var button = document.createElement("button");
 button.className = "btn";
 button.textContent = "Submit";
 button.style.fontSize = "18px";
 button.style.padding = "18px 28px";
 button.style.color = "#ffffff";
-button.style.borderRadius = "16px";
+button.style.borderRadius = "10px";
 button.style.marginBottom = "20px";
 button.style.border = "none";
 button.style.width = "100%";
