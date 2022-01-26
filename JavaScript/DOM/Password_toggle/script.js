@@ -1,74 +1,67 @@
-var form = document.createElement("form");
-form.style.width = "500px";
-form.style.margin = "12% auto";
-form.style.padding = "50px 0";
-form.style.backgroundColor = "rgba(0,0,0,0.8)";
-form.style.boxShadow = "0 0 20px 2px rgba (0,0,0,0.5)";
-document.body.appendChild(form);
+// Wrapper div
+var wrapper = document.createElement("div");
+wrapper.classList = "wrapper";
 
+// Create heading
+var heading = document.createElement("h1");
+heading.innerHTML = "Password";
+heading.id = "h1";
+wrapper.appendChild(heading);
 
-var heading =document.createElement('h1');
-heading.innerHTML="Password";
-heading.style.textDecoration = "none";
-heading.style.marginLeft = "30px";
-heading.style.color = "#2196F3";
-form.appendChild(heading);
+// Create Input field
+var divForInput = document.createElement("div");
+document.body.appendChild(divForInput);
+divForInput.classList = "inputclass";
+var userNameInput = document.createElement("input");
+userNameInput.type = "password";
+// userNameInput.className = "userNameInput";
+userNameInput.id = "userNameInput";
+userNameInput.placeholder = " Enter Your Password Here";
+divForInput.appendChild(userNameInput);
+wrapper.appendChild(divForInput);
 
+// Create icon
+var eyeSlashIcon = document.createElement("i");
+eyeSlashIcon.className = "fa fa-eye-slash";
+eyeSlashIcon.id = "eyeToggle";
+divForInput.appendChild(eyeSlashIcon);
 
-var password = document.createElement("input");
-password.setAttribute("placeholder", "Password");
-password.setAttribute("type", "password");
-password.setAttribute("required", "");
-form.appendChild(password);
-password.style.padding = "15px auto";
-password.style.width = "90%";
-password.style.marginBottom = "10px";
-password.style.marginLeft="30px";
-
-var icon = document.createElement("i");
-icon.className = "fa fa-eye-slash";
-icon.addEventListener("click", function (event) {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    icon.className = "fa fa-eye";
+// Logic for hiding and showing password
+eyeSlashIcon.addEventListener("click", function () {
+  if (userNameInput.type === "password") {
+    userNameInput.type = "text";
+    eyeSlashIcon.className = "fa fa-eye";
   } else {
-    passwordInput.type = "password";
-    icon.className = "fa fa-eye-slash";
+    userNameInput.type = "password";
+    eyeSlashIcon.className = "fa fa-eye-slash";
   }
 });
 
+//  Forgot Password
 var forgotAndNext = document.createElement("div");
-form.appendChild(forgotAndNext);
+wrapper.appendChild(forgotAndNext);
 
 var forgotPassword = document.createElement("a");
 forgotPassword.innerHTML = "Forgot Password?";
+forgotPassword.id = "forgot";
 forgotAndNext.appendChild(forgotPassword);
-forgotPassword.setAttribute("href", "#");
-forgotPassword.style.textDecoration = "none";
-forgotPassword.style.marginLeft = "30px";
-forgotPassword.style.color = "#2196F3";
-forgotPassword.addEventListener('mouseover', function(event) {
-    forgotPassword.style.color = "#FFFFE0 ";
-})
-forgotPassword.addEventListener('mouseout', function(event) {
-    forgotPassword.style.color = "#2196F3";
-})
+forgotPassword.addEventListener("mouseover", function (event) {
+  forgotPassword.style.color = "#FFFFE0 ";
+});
+forgotPassword.addEventListener("mouseout", function (event) {
+  forgotPassword.style.color = "#2196F3";
+});
 
 var next = document.createElement("button");
 next.innerHTML = "Next";
 forgotAndNext.appendChild(next);
-next.style.float = "right";
-next.style.marginRight ="10px";
-next.style.padding = "5px 25px";
-next.style.background = "transparent";
-next.style.borderRadius = "5px";
-next.style.color = "white";
-next.addEventListener('mouseover', function(event) {
-    next.style.background = "#2196F3";
-    next.style.borderColor = "1px solid #fff";
-})
-next.addEventListener('mouseout', function(event) {
-    next.style.backgroundColor = "transparent";
-})
-
-
+next.id = "next";
+next.addEventListener("mouseover", function (event) {
+  next.style.background = "#2196F3";
+  next.style.borderColor = "1px solid #fff";
+  console.log("Your Password is:" + userNameInput.value);
+});
+next.addEventListener("mouseout", function (event) {
+  next.style.backgroundColor = "transparent";
+});
+document.body.appendChild(wrapper);
