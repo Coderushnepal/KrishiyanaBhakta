@@ -118,19 +118,6 @@ errorMessage2.innerHTML = "Password doesnt match.";
 errorMessage2.style.fontSize = "14px";
 form.appendChild(errorMessage2);
 
-var button = document.createElement("button");
-button.className = "btn";
-button.textContent = "Submit";
-button.style.fontSize = "18px";
-button.style.padding = "18px 28px";
-button.style.color = "#ffffff";
-button.style.borderRadius = "10px";
-button.style.marginBottom = "20px";
-button.style.border = "none";
-button.style.width = "100%";
-button.setAttribute("type", "button");
-button.style.background = "linear-gradient(to left, #673ab7, #03a9f4)";
-form.appendChild(button);
 
 var showPassword = document.createElement("input");
 showPassword.setAttribute("type", "checkbox");
@@ -154,6 +141,20 @@ var showLabel = document.createElement("label");
 showLabel.innerHTML = "Show password";
 showLabel.style.fontSize = "14px";
 form.appendChild(showLabel);
+var button = document.createElement("button");
+button.className = "btn";
+button.textContent = "Submit";
+button.style.fontSize = "18px";
+button.style.padding = "18px 28px";
+button.style.color = "#ffffff";
+button.style.borderRadius = "10px";
+button.style.marginBottom = "20px";
+button.style.border = "none";
+button.style.width = "100%";
+button.setAttribute("type", "button");
+button.style.background = "linear-gradient(to left, #673ab7, #03a9f4)";
+form.appendChild(button);
+
 
 // form validation
 var username = document.getElementById("username");
