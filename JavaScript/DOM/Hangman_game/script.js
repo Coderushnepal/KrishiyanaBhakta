@@ -26,8 +26,10 @@ var dictionary = [
 var correctLetters = [];
 var incorrectLetters = [];
 
+
 var selectedWords = dictionary[Math.floor(Math.random() * dictionary.length)];
 console.log(selectedWords);
+var letters = selectedWords.length;
 //display letters
 function displayWord() {
   word.innerHTML = `
@@ -50,14 +52,8 @@ function displayWord() {
 }
 displayWord();
 
-var letters = selectedWords.length;
-var count = 0;
 
-//display figure parts
-function displayFigure() {
-  figureParts[count].style.display = "block";
-  count++;
-}
+
 
 //display wrong letters
 function displayWrong() {
@@ -72,7 +68,14 @@ function displayWrong() {
     popUp.style.display = "block";
   }
 }
-
+var count = 0;
+//display figure parts
+function displayFigure() {
+  try{
+  figureParts[count].style.display = "block";
+  count++;
+}catch(error) {}
+}
 //Displays notification sliding from the bottom
 function displayNotification() {
   notification.classList.add("show");
@@ -109,3 +112,4 @@ play.addEventListener("click", function () {
 });
 
 window.addEventListener("keydown", check);
+
