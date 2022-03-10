@@ -4,6 +4,7 @@ import Welcome from "./Welcome";
 import SpeedIndicator from "./SpeedIndicator";
 import Click from "./Click";
 import Hover from "./Hover";
+import Calculator from "./Calculator";
 
 class App extends React.Component {
   constructor() {
@@ -36,8 +37,12 @@ class App extends React.Component {
         <List list={this.state.list} onAdd={this.handleListAdd} />
         <Click />
         <Hover />
+
+        <Calculator />
       </React.Fragment>
     );
   }
 }
+
+
 export default App;
