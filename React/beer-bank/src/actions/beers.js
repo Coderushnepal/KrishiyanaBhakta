@@ -7,8 +7,20 @@ export const FETCH_BEERS_FULFILLED = "FETCH_BEERS_FULFILLED";
 
 // pending , rejected , fulfilled
 
-export default function fetchBeers(dispatch) {
-  dispatch(fetchBeersPending);
+export default function fetchBeers(params) {
+  const { pageNumber: page, searchQuery: beer_name } = params;
+
+  return async function (dispatch) {
+    dispatch(fetchBeersPending());
+
+    try {
+      const data = await beerService.fetchBeers({ page, beer_name });
+
+      dispatch(fetchBeersFulfilled(data));
+    } catch (err) {
+      dispatch(fetchBeersRejected(err));
+    }
+  };
 }
 
 function fetchBeersFulfilled(beers) {
@@ -25,12 +37,8 @@ function fetchBeersRejected(err) {
   };
 }
 
-async function fetchBeersPending(dispatch) {
-  try {
-    const data = await beerService.fetchBeers();
-
-    dispatch(fetchBeersFulfilled(data));
-  } catch (err) {
-    dispatch(fetchBeersRejected(err));
-  }
+function fetchBeersPending() {
+  return {
+    type: FETCH_BEERS_PENDING,
+  };
 }

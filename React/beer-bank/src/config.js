@@ -1,5 +1,5 @@
 const config = {
-  apiUrl: process.env.REACT_APP_API_URL || "https://api.punkapi.com/",
+  apiUrl: process.env.REACT_APP_API_URL,
 
   endpoints: {
     beers: "v2/beers",
